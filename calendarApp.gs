@@ -1,6 +1,6 @@
 /**
  * TODO add @param @returns
- * Runs when a calendar event is selected or opened
+ * Runs when a calendar event is selected or opened.
  */
 function onCalendarEventOpen(e){
 
