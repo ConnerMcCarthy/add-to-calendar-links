@@ -1,0 +1,36 @@
+{
+  "timeZone": "America/New_York",
+  "dependencies": {
+    "enabledAdvancedServices": [
+      {
+        "userSymbol": "Calendar",
+        "version": "v3",
+        "serviceId": "calendar"
+      }
+    ]
+  },
+  "exceptionLogging": "STACKDRIVER",
+  "runtimeVersion": "V8",
+  "addOns": {
+    "calendar": {
+      "currentEventAccess": "READ",
+      "eventOpenTrigger": {
+        "runFunction": "onCalendarEventOpen"
+      },
+      "homepageTrigger": {
+        "runFunction": "onCalendarHomePageOpen",
+        "enabled": false
+      }
+    },
+    "common": {
+      "logoUrl": "https://img.uxwing.com/wp-content/themes/uxwing/download/web-app-development/hyperlink-icon.png",
+      "name": "Create Add to Calendar Links (Dev)",
+      "useLocaleFromApp": false
+    }
+  },
+  "oauthScopes": [
+    "https://www.googleapis.com/auth/calendar.addons.execute",
+    "https://www.googleapis.com/auth/calendar.addons.current.event.read",
+    "https://www.googleapis.com/auth/calendar.readonly"
+  ]
+}
